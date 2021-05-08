@@ -48,7 +48,7 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 1em 2em;
 }
 
 img{
@@ -79,6 +79,11 @@ h3 {font-size: var(--fs-h3)}
 .section__title {
     margin-bottom: .25em;
     font-weight: var(--fw-reg);
+}
+
+.section-header {
+    text-align: center;
+    margin: 1em 0 0 0;
 }
 
 .section__title--intro {
@@ -242,6 +247,30 @@ header {
         position: relative;
         bottom: 60px;   
     }
+}
+
+/* Skills/Experience */
+
+#skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-left: 1em;
+}
+
+#skills-list ::marker {
+    color: var(--clr-accent);
+}
+
+/* My Work */
+
+.project-pic {
+    margin: auto;
+}
+
+.project-header {
+    margin: 10px 0;
+    text-align: center;
 }
 
 /* footer */
