@@ -255,7 +255,6 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    margin-left: 1em;
 }
 
 #skills-list ::marker {
