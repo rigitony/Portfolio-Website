@@ -32,8 +32,12 @@
     }
 
     .project-pic-container {
-        justify-items: space-between;
-        align-items: space-between;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .SQLcode, .gist, .gist-file, .gist-data, .gist-meta {
+        width: 100%;
     }
 }
 
@@ -46,17 +50,27 @@ html {
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
-    /* margin: 0; */
+    margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
-    line-height: 1.6;
-    max-width: 1080px; 
-	margin: 0 auto !important; 
-	float: none !important; 
+    line-height: 1.6; 
+}
+
+#main {
+    max-width: 50rem;
+    margin: auto;
 }
 
 section {
-    padding: 1em 2em;
+    padding: 1em 0;
+    max-width: 100%;
+}
+
+p {
+    align-self: center;
+    text-align: left;
+    padding-left: .65rem;
+    margin: 1rem;
 }
 
 img{
@@ -64,7 +78,12 @@ img{
     max-width: 100%;
 }
 
-strong { font-weight: var(--fw-bold);}
+strong { 
+    font-weight: var(--fw-bold);
+    align-self: center;
+    text-align: center;
+    margin: auto;
+}
 
 :focus {
     outline: 3px solid var(--clr-accent);
@@ -87,6 +106,8 @@ h3 {font-size: var(--fs-h3)}
 .section__title {
     margin-bottom: .25em;
     font-weight: var(--fw-reg);
+    text-align: center;
+    padding-left: .65rem;
 }
 
 .section-header {
@@ -100,11 +121,7 @@ h3 {font-size: var(--fs-h3)}
 
 .section__title--intro strong {
     display: block;
-}
-
-.section_subtitle {
-    margin: 0;
-    font-size: var(--fs-h3);
+    max-width: 90%;
 }
 
 .section__subtitle--intro,
@@ -232,29 +249,14 @@ header {
 @media (min-width: 600px) {
     .intro {
         display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
-            grid-template-columns: min-content max-content;
+        grid-template-columns: 1fr 1fr;
     }
 
     .intro__img {
-        grid-area: img;
         min-width: 400px;
         position: relative;
         z-index: 2;
     }    
-    
-    
-    .section__subtitle--intro {
-        left: -1.5em;  
-        height: auto; 
-        position: relative;
-        bottom: 60px;   
-    }
 }
 
 /* Skills/Experience */
@@ -263,6 +265,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    margin-left: 1.65rem;
 }
 
 #skills-list ::marker {
@@ -274,7 +277,7 @@ header {
 .project-pic {
     margin: auto;
     width: 20rem;
-    max-width: 50vw;
+    max-width: 50%;
 }
 
 .project-header {
@@ -293,7 +296,7 @@ header {
     margin: auto;
 }
 
-#SQLcode, .gist, .gist-file, .gist-data, .gist-meta {
+.SQLcode, .gist, .gist-file, .gist-data, .gist-meta {
     max-height: 30rem;
     max-width: 90vw;
 }
