@@ -41,10 +41,13 @@ html {
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
-    margin: 0;
+    /* margin: 0; */
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    max-width: 1080px; 
+	margin: 0 auto !important; 
+	float: none !important; 
 }
 
 section {
@@ -265,12 +268,27 @@ header {
 
 .project-pic {
     margin: auto;
+    width: 20rem;
+    max-width: 50vw;
 }
 
 .project-header {
     margin: 10px 0;
     text-align: center;
 }
+
+.project-pic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding-bottom: 2rem;
+}
+
+.gist, .gist-file, .gist-data {
+    max-height: 30rem;
+    width: 40rem;
+}
+
 
 /* footer */
 
