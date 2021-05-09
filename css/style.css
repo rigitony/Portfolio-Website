@@ -279,14 +279,18 @@ header {
 
 .project-pic-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    justify-items: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
+    /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: space-between;
     padding-bottom: 2rem;
+    margin: auto;
 }
 
-.gist, .gist-file, .gist-data {
+#SQLcode, .gist, .gist-file, .gist-data, .gist-meta {
     max-height: 30rem;
-    width: 40rem;
+    /* max-width: 40rem; */
+    max-width: 90vw;
 }
 
 
