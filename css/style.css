@@ -23,12 +23,17 @@
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 885px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
+    }
+
+    .project-pic-container {
+        justify-items: space-between;
+        align-items: space-between;
     }
 }
 
@@ -279,17 +284,17 @@ header {
 
 .project-pic-container {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
-    /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    justify-items: space-between;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
     padding-bottom: 2rem;
     margin: auto;
 }
 
 #SQLcode, .gist, .gist-file, .gist-data, .gist-meta {
     max-height: 30rem;
-    /* max-width: 40rem; */
     max-width: 90vw;
 }
 
