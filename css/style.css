@@ -31,7 +31,7 @@
         --fs-body: 1.125rem;
     }
 
-    .project-pic-container {
+    .project-pic-container-h {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
@@ -277,7 +277,7 @@ header {
 .project-pic {
     margin: auto;
     width: 20rem;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .project-header {
@@ -285,7 +285,7 @@ header {
     text-align: center;
 }
 
-.project-pic-container {
+.project-pic-container-v, .project-pic-container-h {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-content: space-evenly;
