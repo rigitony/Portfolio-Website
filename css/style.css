@@ -36,7 +36,7 @@
         grid-template-rows: 1fr;
     }
 
-    .SQLcode, .gist, .gist-file, .gist-data, .gist-meta {
+    .gist-code, .gist, .gist-file, .gist-data, .gist-meta {
         width: 100%;
     }
 }
@@ -292,11 +292,24 @@ header {
 .project-header {
     margin: 10px 0;
     text-align: center;
+    grid-area: 1 / 1 / 1 / 9
 }
 
-.project-pic-container-v, .project-pic-container-h {
+.git-link {
+    grid-area: 1 / 8 / 1 / 9;
+    align-content: center;
+    margin: auto;
+}
+
+.project-header-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.project-pic-container-v, .project-pic-container-h, .dblCode-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-row-gap: 10px;
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
@@ -305,7 +318,7 @@ header {
     margin: auto;
 }
 
-.SQLcode, .gist, .gist-file, .gist-data, .gist-meta {
+.gist-code, .gist, .gist-file, .gist-data, .gist-meta {
     max-height: 30rem;
     max-width: 90vw;
 }
