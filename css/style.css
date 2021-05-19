@@ -78,6 +78,15 @@ img{
     max-width: 100%;
 }
 
+i{
+    font-size: 2.5rem;
+    color: var(--clr-accent);
+}
+
+.git-link{
+    padding-right: .5rem;
+}
+
 strong { 
     font-weight: var(--fw-bold);
     align-self: center;
@@ -135,8 +144,15 @@ h3 {font-size: var(--fs-h3)}
     justify-content: center;
 }
 
-.title .subtitle {
+.title, .subtitle {
     text-align: center;
+}
+
+.welcome_link_box, .social_link_box {
+    display: flex;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 /* header */
@@ -345,7 +361,7 @@ header {
 }
 
 .footer__link:hover,
-.social-list__link:hover {
+.social-list__link:hover{
     opacity: .7;
 }
 
